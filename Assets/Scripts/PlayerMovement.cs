@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
 
     private Vector3 acceleration;
+    public float speed = 0f;
 
     // Start is called before the first frame update
     void Start()
@@ -31,7 +32,7 @@ public class PlayerMovement : MonoBehaviour
 
     void GatherInput()
     {
-        acceleration = Vector3.forward * Time.deltaTime * 10;
+        acceleration = Vector3.forward * Time.deltaTime * speed;
     }
 
     
