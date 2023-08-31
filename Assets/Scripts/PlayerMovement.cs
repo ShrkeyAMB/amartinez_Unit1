@@ -22,13 +22,11 @@ public class PlayerMovement : MonoBehaviour
         
 
         GatherInput();
-        
-    }
 
-    void FixedUpdate()
-    {
         transform.Translate(acceleration);
     }
+
+    
 
     void GatherInput()
     {
